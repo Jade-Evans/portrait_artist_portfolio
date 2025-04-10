@@ -1,0 +1,253 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+/***********INDEX HOMEPAGE STYLING**************************************************************/
+header {display: flex;
+        justify-content: space-between;
+        /*enables the spacing between the two header features aka the title and nav*/
+        margin: 0;
+}
+
+
+/*"JADE EVANS" & "PORTRAIT ARTIST" titles (h1 and h2 respectively)*/
+.TopTitleIndex h1, .TopTitleIndex h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    color:slategray;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 0;
+    padding:0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*Styling of "JADE EVANS" in index only*/
+.TopTitleIndex h1{
+    padding-top:18px;
+}
+
+/*Styling of "PORTRAIT ARTIST" in index only*/
+.TopTitleIndex h2{
+    padding-bottom:18px;
+}
+
+/*Styling for all nav bars - index and subpages - same for consistency*/
+.nav-bar{
+    list-style:none;/*keeps the nav items horizontal rather than defaulting an a ul*/
+    display: flex; /*helps keep the list items in a row*/
+    justify-content: right;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 18px;    
+}
+
+.nav-bar a{
+    color:slategray;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 100;
+    padding: 10px 15px;
+    text-decoration: none;
+    justify-content: space-evenly;
+    margin: 20px;
+    transition: font-weight 0.1s ease;/*ensures smooth transition on hover/bolding of nav titles*/
+}
+
+.nav-bar a:hover{
+    font-weight:400;
+    transform: scale(1.3);
+}
+
+.banner{
+    width: 85%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.img-style{
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 50%;
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom center;
+    transform: translateX(-50%);
+    z-index: -1;/*Makes sure this sits below the title in the banner*/
+    
+}
+
+/***********UNIVERSAL WEBPAGE STYLING**************************************************************/
+
+/*Jade Evans Portrait Artist Headers*/
+.TopTitleWebPages h1, .TopTitleWebPages h2 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    color:slategray;
+    display: flex;
+    justify-content: flex-start;
+    margin: 8px;
+}
+
+/*Styling of "JADE EVANS" in webpages*/
+.TopTitleWebPages h1{
+    
+    margin-bottom:0;
+    padding-bottom: 0;
+    
+}
+
+/*Styling of "PORTRAIT ARTIST" in webpage*/
+.TopTitleWebPages h2{
+    /*border: 2px solid slategray;*/
+    margin-top: 0;
+    padding-top: 0
+    ;
+}  
+
+/*Individual titles of pages*/
+.webpageTitle{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    color:rgb(76, 91, 99);
+    display: flex;
+    justify-content: center;
+}
+
+/*General styling for bodies of text*/
+p{font-family: "Montserrat", sans-serif;}
+footer{
+    font-family: "Montserrat", sans-serif;
+    color:rgb(64, 66, 67);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+} 
+
+/**********GALLERY STYLING*************************************************************/
+.galleryImages{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+}  
+
+.image-wrapper{
+    position: relative; /*works in relation to position:abs. with the overlay, overlay will be dictated by i-w because we use this*/
+}
+    
+.overlay{
+    position:absolute;/*finds its closest parent, image-wrapper*/
+    top:0;/*by setting these paras to 0, we stretch the overlay across the entire image-wrapper*/
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgb(70, 66, 66);
+    opacity:0;/*This hides it initially whilst no hover so we see full image*/
+    transition:opacity 0.3s ease;/*ensures a smooth transition with opacity*/
+    display:flex; /*this heps positioning of the text and button*/
+    flex-direction: column;/*stacks the text and button vertically*/
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text{/*the styling for the enter buttons on the gallery images*/
+    color:whitesmoke;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding: 2px;
+}
+
+.enter-button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    color:whitesmoke;
+    text-align: center;
+    font-size:15px;
+    border: 2px solid whitesmoke;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.enter-button:hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+#Trad{
+    
+    height: 400px;
+    max-width: 500px;
+    
+}
+
+#Dig{
+    
+    height: 400px;
+    max-width: 500px;
+    
+}
+/**********TRADITIONAL PORTRAIT SUBPAGE STYLING******************************************************/
+/*Handles Grid Formation of gallery using Flex*/
+.TradPortraitGallery{
+    display: flex; /*turns the trad..container into a flexbox - stops images stacking vert.*/ 
+    flex-wrap: wrap;/*stops flex trying to fit all on one line, will set underneath*/
+    gap: 10px;/*the gap between both vert & hor.*/ 
+    justify-content: center;/*centers within the container. */
+    align-items: center;
+
+
+}
+
+.icon{
+    height: 240px;
+    max-width: 300px;
+}
+
+
+
+/**********ABOUT PAGE STYLING*************************************************************/
+.DigiSPHair{
+
+    height: 400px;
+}
+
+
+.introParagraph{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50% -50%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(76, 91, 99);
+    line-height: 1.2;
+}
