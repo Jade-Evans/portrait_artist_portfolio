@@ -3,6 +3,7 @@
     /*outline: 2px solid red;*/
     box-sizing: border-box;/*makes boxes the actual height and width specified, 
     taking into account padding, border dims. etc)*/
+    font-family: Montserrat, sans-serif;
 }
 
 body{
@@ -19,17 +20,6 @@ header {display: flex;
         /*enables the spacing between the two header features aka the title and nav*/
         
 }
-
-
-/*"JADE EVANS" & "PORTRAIT ARTIST" titles (h1 and h2 respectively)*/
-/* .HomeTitle h1, .HomeTitle h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 60px;
-    font-weight: 200;
-    color:slategray;
-    display: flex;
-    justify-content: flex-start;
-} */
 
 .HomeTitle{
     font-family: "Montserrat", sans-serif;
@@ -64,6 +54,7 @@ header {display: flex;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0;
+    gap: 15px;
 }
 
 .nav-bar a{
@@ -127,13 +118,13 @@ header {display: flex;
 }
 
 /*Styling of "JADE EVANS" in webpages*/
-.TopTitleWebPages h1{ 
+/*.TopTitleWebPages h1{ 
 }
 
-/*Styling of "PORTRAIT ARTIST" in webpage*/
+/*Styling of "PORTRAIT ARTIST" in webpage
 .TopTitleWebPages h2{
     
-}  
+} */
 
 /*Individual titles of pages*/
 .webpageTitle{
@@ -241,7 +232,10 @@ footer{
     max-width: 300px;
 }
 
-
+/**********COMMISSIONS PAGE STYLING*************************************************************/
+.configFieldset{
+    border:none;
+}
 
 /**********ABOUT PAGE STYLING*************************************************************/
 .DigiSPHair{
