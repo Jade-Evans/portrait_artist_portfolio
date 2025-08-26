@@ -238,10 +238,28 @@ footer{
 }
 
 /**********ABOUT PAGE STYLING*************************************************************/
-.DigiSPHair{
-
-    height: 400px;
+.quote{
+    font-style:italic;
+    text-align: center;
+    margin: 30px;
+    max-width: 85%;
 }
+
+.aboutImgContainer{
+    display: flex;
+    max-height:400px;
+    overflow: hidden;
+    gap:15px;
+    align-content: stretch;
+}
+.aboutImgContainer img{
+
+    height: 100%;
+    width: 33.3%;
+    object-fit: contain;
+    
+}
+
 
 
 .introParagraph{
