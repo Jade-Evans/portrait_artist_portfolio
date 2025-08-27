@@ -5,6 +5,8 @@
     taking into account padding, border dims. etc)*/
     font-family: Montserrat, sans-serif;
     color: slategray;
+    margin: 0;
+    padding: 0;
 }
 
 /***********INDEX HOMEPAGE STYLING**************************************************************/
@@ -21,6 +23,13 @@ header {display: flex;
     display: flex;
     justify-content: flex-start;
     margin: 0;
+}
+
+#websiteIcon{
+    height:100px;
+    max-width: 100px;
+    align-self: center;
+    margin: 15px;
 }
 
 /*Styling of "JADE EVANS" in index only*/
