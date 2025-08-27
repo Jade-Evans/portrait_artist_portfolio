@@ -4,14 +4,7 @@
     box-sizing: border-box;/*makes boxes the actual height and width specified, 
     taking into account padding, border dims. etc)*/
     font-family: Montserrat, sans-serif;
-}
-
-body{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 0;
+    color: slategray;
 }
 
 /***********INDEX HOMEPAGE STYLING**************************************************************/
@@ -22,10 +15,9 @@ header {display: flex;
 }
 
 .HomeTitle{
-    font-family: "Montserrat", sans-serif;
+    /*font-family: "Montserrat", sans-serif;*/
     font-size: 80px;
     font-weight: 200;
-    color:slategray;
     display: flex;
     justify-content: flex-start;
     margin: 0;
@@ -58,8 +50,6 @@ header {display: flex;
 }
 
 .nav-bar a{
-    color:slategray;
-    font-family: 'Montserrat',sans-serif;
     font-weight: 100;
     text-decoration: none;
     justify-content: space-evenly;
@@ -104,34 +94,23 @@ header {display: flex;
 }
 
 /***********UNIVERSAL WEBPAGE STYLING**************************************************************/
-
+.mainContainer{
+    margin: 20px 40px;
+}
 /*Jade Evans Portrait Artist Headers*/
 .TopTitleWebPages h1, .TopTitleWebPages h2 {
-    font-family: 'Montserrat',sans-serif;
     font-size: 30px;
     font-weight: 200;
-    color:slategray;
     display: flex;
     justify-content: flex-start;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-/*Styling of "JADE EVANS" in webpages*/
-/*.TopTitleWebPages h1{ 
-}
-
-/*Styling of "PORTRAIT ARTIST" in webpage
-.TopTitleWebPages h2{
-    
-} */
-
 /*Individual titles of pages*/
-.webpageTitle{
-    font-family:'Montserrat', sans-serif;
-    font-weight: 400;
+.pageTitle{
+    font-weight: 200;
     font-size: 90px;
-    color:rgb(76, 91, 99);
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -139,82 +118,15 @@ header {display: flex;
     text-align: center;
 }
 
-/*General styling for bodies of text*/
-p{font-family: "Montserrat", sans-serif;}
 footer{
-    font-family: "Montserrat", sans-serif;
-    color:rgb(64, 66, 67);
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
 } 
 
-/**********GALLERY STYLING*************************************************************/
-.galleryImages{
-    display:flex;
-    justify-content: center;
-    gap:30px;
-}  
+/**********PORTFOLIO******************/
 
-.image-wrapper{
-    position: relative; /*works in relation to position:abs. with the overlay, overlay will be dictated by i-w because we use this*/
-}
-    
-.overlay{
-    position:absolute;/*finds its closest parent, image-wrapper*/
-    top:0;/*by setting these paras to 0, we stretch the overlay across the entire image-wrapper*/
-    left:0;
-    right:0;
-    bottom:0;
-    background-color: rgb(70, 66, 66);
-    opacity:0;/*This hides it initially whilst no hover so we see full image*/
-    transition:opacity 0.3s ease;/*ensures a smooth transition with opacity*/
-    display:flex; /*this heps positioning of the text and button*/
-    flex-direction: column;/*stacks the text and button vertically*/
-    justify-content: center;
-    align-items: center;
-}
 
-.overlay-text{/*the styling for the enter buttons on the gallery images*/
-    color:whitesmoke;
-    font-size: 24px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
-    margin-bottom: 10px;
-    margin-top: 0;
-    padding: 2px;
-}
-
-.enter-button{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    text-decoration: none;
-    color:whitesmoke;
-    text-align: center;
-    font-size:15px;
-    border: 2px solid whitesmoke;
-    padding: 8px 12px;
-    display: inline-block;
-}
-
-.enter-button:hover{
-    background-color: black;
-    transform: scale(1.1);
-}
-#Trad{
-    
-    height: 400px;
-    max-width: 500px;
-    
-}
-
-#Dig{
-    
-    height: 400px;
-    max-width: 500px;
-    
-}
 /**********TRADITIONAL PORTRAIT SUBPAGE STYLING******************************************************/
 /*Handles Grid Formation of gallery using Flex*/
 .TradPortraitGallery{
@@ -223,21 +135,72 @@ footer{
     gap: 10px;/*the gap between both vert & hor.*/ 
     justify-content: center;/*centers within the container. */
     align-items: center;
-
-
 }
 
 .icon{
     height: 240px;
-    max-width: 300px;
+    width: 240px;
+    object-fit: cover;
 }
 
 /**********COMMISSIONS PAGE STYLING*************************************************************/
 .configFieldset{
     border:none;
 }
-
-/**********ABOUT PAGE STYLING*************************************************************/
+form{
+    background-color: rgb(220, 229, 226);
+    padding: 15px;
+    border: 5px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    
+}
+form h2{
+    align-self: center;
+    font-size: 50px;
+    font-weight: 200;
+    margin: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 5px solid whitesmoke;
+    background-color: white;
+    flex:1;
+}
+form h3{
+    margin: 0px;
+    flex:1;
+}
+.formButton{
+    flex: 0 0 auto;
+    background-color: whitesmoke;
+    align-self: flex-start;
+    border-radius: 5px;
+    border: white;
+    padding: 5px;
+    font-size: 16px;
+}
+.mediaOptionContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex:1;
+}
+.mediaOption{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+.mediaIcon{
+    height: 200px;
+    width: 200px;
+    border: 5px solid whitesmoke;
+    flex-shrink: 1;
+   
+}
+/**********ABOUT PAGE********/
 .quote{
     font-style:italic;
     text-align: center;
