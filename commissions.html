@@ -34,85 +34,147 @@
     
 <div class="mainContainer">
     <h1 class="pageTitle">COMMISSIONS</h1>
-    <p>With over 20 years of experience creating portraits from photographs, I bring each subject to life using 
-        a range of traditional media and, more recently, digital techniques. I enjoy capturing the unique character 
-        of both pets and humans, and every portrait is crafted with care and attention to detail.
-    </p>
-    <p>
-        There can be several elements to consider when configuring your perfect portrait. The form below helps you decide
-        on the different options. It also provides a helpful quotation calculator to give an ESTIMATION of the 
-        cost of your portrait based on the options selected. 
-    </p>
-    <p>
-        If you’d like to discuss a commission or find out more about the process, please use the form below 
-        to share your ideas—I’d be delighted to help bring your vision to life.
-    </p>
+    <div class="commissionsIntro">
+        <div class="commissionsIntroText">
+            <p>With over 20 years of experience creating portraits from photographs, I bring each subject to life using 
+                a range of traditional media and, more recently, digital techniques. I enjoy capturing the unique character 
+                of both pets and humans, and every portrait is crafted with care and attention to detail.
+            </p><br>
+            <p>
+                There can be several elements to consider when configuring your perfect portrait. The form below helps you decide
+                on the different options. It also provides a helpful quotation calculator to give an ESTIMATION of the 
+                cost of your portrait based on the options selected. 
+            </p><br>
+            <p>
+                If you’d like to discuss a commission or find out more about the process, please use the form below 
+                to share your ideas—I’d be delighted to help bring your vision to life.
+            </p>
+        </div>
+        <img class="commissionsIntroImg" src="images/Logan.jpg">
+    </div>
     
     <form>
         <h2>COMMISSION FORM</h2>
-        <h3>STEP ONE: SELECT YOUR OPTIONS</h3>
-        <div class="mediaSelection">
-            <legend><strong>Select media type:</strong></legend>
-            <div class="mediaOptionContainer">
-                <div class="mediaOption">
-                    <label><input type="radio" name="medium" value="digital">Digital Portrait </label>
-                    <img class="mediaIcon"src="images/grace.jpg" alt="portrait of toddler with leopard print top looking up" loading="lazy">  
+            <div class="step1and2Form">
+                <div class="step1Form">
+                    <h3>STEP ONE: SELECT YOUR OPTIONS</h3>
+                    <div class="mediaSelection">
+                        <legend><strong>Select media type:</strong></legend>
+                        <div class="mediaOptionContainer">
+                            <div class="mediaOption">
+                                <label><input type="radio" name="medium" value="digital">Digital Portrait </label>
+                                <img class="mediaIcon"src="images/grace.jpg" alt="portrait of toddler with leopard print top looking up" loading="lazy">  
+                            </div>
+                            <div class="mediaOption">
+                                <label><input type="radio" name="medium" value="pencil">Pencil Portrait</label>
+                                <img class="mediaIcon"src="images/Belles,Colour pencil.jpg" alt="Dog Portrait, Colour Pencil" loading="lazy">
+                            </div>
+                            <div class="mediaOption">
+                                <label><input type="radio" name="medium" value="painting">Painted Portrait</label>
+                                <img class="mediaIcon"src="images/Springer spaniel Acrylic.jpg" alt="Springer Spaniel Acrylic Portrait" loading="lazy">
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+                    <fieldset class="configFieldset">
+                        <legend><strong>Select orientation:</strong></legend>
+                        <label><input type="radio" name="orientation" value="portrait">portait</label>
+                        <label><input type="radio" name="orientation" value="landscape">landscape</label>
+                    </fieldset>
+                    <fieldset class="configFieldset">
+                        <legend><strong>Select colour:</strong></legend>
+                        <label><input type="radio" name="colourType" value="colour">colour</label>
+                        <label><input type="radio" name="colourType" value="monochrome">monochrome (black & white)</label>
+                    </fieldset>
+
+                    <fieldset class="configFieldset">
+                        <legend><strong>Select quantity of subjects*:</strong></legend>
+                        <label><input type="radio" name="subjectQuantity" value="1">1</label>
+                        <label><input type="radio" name="subjectQuantity" value="2">2</label>
+                        <label><input type="radio" name="subjectQuantity" value="3">3</label>
+                        <p><em>*for 3+please send direct enquiry</em></p> 
+                    </fieldset>
+
+                    
                 </div>
-                <div class="mediaOption">
-                    <label><input type="radio" name="medium" value="pencil">Pencil Portrait</label>
-                    <img class="mediaIcon"src="images/Belles,Colour pencil.jpg" alt="Dog Portrait, Colour Pencil" loading="lazy">
-                </div>
-                <div class="mediaOption">
-                    <label><input type="radio" name="medium" value="painting">Painted Portrait</label>
-                    <img class="mediaIcon"src="images/Springer spaniel Acrylic.jpg" alt="Springer Spaniel Acrylic Portrait" loading="lazy">
+                <div class="step2Form">
+                    <h3>STEP TWO: GENERATE QUOTE</h3>
+                    <p>Below is an itemised summary of your selections. If you would like a downloadable PDF copy, please
+                        click the <span><strong>Generate Quotation</strong></span> button below. 
+                    </p>
+                    <table id="quoteTable">
+                        <colgroup>
+                        <col style="width:200px;">
+                        <col style="width:120px;">
+                        <col style="width:180px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Media:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td>
+                            </tr>
+                            <tr>
+                                <th>Orientation:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td>
+                            </tr>
+                            <tr>
+                                <th>Colour:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td> 
+                            </tr>
+                            <tr>
+                                <th>Number of Subjects:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td> 
+                            </tr>
+                            <tr>
+                                <th>Size:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td>
+                            </tr>
+                            <tr>
+                                <th>Framed:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td>
+                            </tr>
+                            <tr>
+                                <th>Gift wrapped:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td>
+                            </tr>
+                            <tr>
+                                <th>Early deadline:</th>
+                                <td class="userChoice"><em>placeholder</em></td>
+                                <td class="priceUpdate"><em>£££plh</em></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <button class="formButton">Generate Quotation</button>
                 </div>
             </div>
-            
-        </div>
-        <fieldset class="configFieldset">
-            <legend><strong>Select size:</strong></legend>
-            <label><input type="radio" name="size" value="a4">A4</label>
-            <label><input type="radio" name="size" value="a3">A3</label>
-            <label><input type="radio" name="size" value="a2">A2</label>
-        </fieldset>
+            <div class="submitForm">
+                <h3>STEP THREE: SUBMIT FORM</h3>
 
-        <fieldset class="configFieldset">
-            <legend><strong>Select orientation:</strong></legend>
-            <label><input type="radio" name="orientation" value="portrait">portait</label>
-            <label><input type="radio" name="orientation" value="landscape">landscape</label>
-        </fieldset>
+                <label for="fname">First name:<input type="text" id="fname" name="fname"></label>
+                <label for="lname">Last name:<input type="text" id="lname" name="lname"></label><br>
+                <label for="email">Email address:<input type="text" id="email" name="email"></label><br>
+                <label for="phone">Phone:<input type="text" id="phone" name="phone"></label><br>
+        
 
-        <fieldset class="configFieldset">
-            <legend><strong>Select quantity of subjects*:</strong></legend>
-            <label><input type="radio" name="subjectQuantity" value="1">1</label>
-            <label><input type="radio" name="subjectQuantity" value="2">2</label>
-            <label><input type="radio" name="subjectQuantity" value="3">3</label>
-            <p><em>*for 3+please send direct enquiry</em></p> 
-        </fieldset>
-
-        <fieldset class="configFieldset">
-            <legend><strong>Select colour:</strong></legend>
-            <label><input type="radio" name="colourType" value="colour">colour</label>
-            <label><input type="radio" name="colourType" value="monochrome">monochrome (black & white)</label>
-        </fieldset>
-
-        <h3>STEP TWO: GENERATE QUOTE</h3>
-        <p>Below is an itemised summary of your selections. If you would like a downloadable PDF copy, please
-            click the <span><strong>Generate Quotation</strong></span> button below. 
-        </p>
-        <button class="formButton">Generate Quotation</button>
-        <div class="submitForm">
-            <h3>STEP THREE: SUBMIT FORM</h3>
-
-            <label for="fname">First name:<input type="text" id="fname" name="fname"></label>
-            <label for="lname">Last name:<input type="text" id="lname" name="lname"></label><br>
-            <label for="email">Email address:<input type="text" id="email" name="email"></label><br>
-            <label for="phone">Phone:<input type="text" id="phone" name="phone"></label><br>
-    
-
-            <textarea name="message" rows="10" cols="30"></textarea>
-                <br><br>
-            <input type="submit" class="formButton">
+                <textarea name="message" rows="10" cols="30"></textarea>
+                    <br><br>
+                <input type="submit" class="formButton">
         </div>
         
 

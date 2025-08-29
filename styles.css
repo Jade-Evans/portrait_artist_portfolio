@@ -153,9 +153,28 @@ footer{
 .configFieldset{
     border:none;
 }
+.commissionsIntro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap:30px;
+    
+}
+.commissionsIntroText{
+    flex:1;
+    
+    
+}
+.commissionsIntroImg{
+    flex:1;
+    height: 350px;
+    max-width: 350px;
+    border: 5px solid whitesmoke;
+}
 form{
     background-color: rgb(220, 229, 226);
-    padding: 15px;
+    padding: 25px;
     border: 5px solid whitesmoke;
     display: flex;
     flex-direction: column;
@@ -176,6 +195,38 @@ form h3{
     margin: 0px;
     flex:1;
 }
+.step1and2Form{
+    display:flex;
+    justify-content: space-around;
+}
+.step1Form, .step2Form{
+    flex: 1;
+    padding: 20px;
+}
+.step2Form{
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+}
+#quoteTable{
+    text-align: left;
+    
+    max-width:fit-content;
+    text-wrap: nowrap;
+    align-self: center;
+}
+#quoteTable th{
+    text-align: end;
+    padding: 10px;
+}
+.userChoice{
+    text-align: left;
+    
+}
+.priceUpdate{
+    text-align: center;
+}
+
 .formButton{
     flex: 0 0 auto;
     background-color: whitesmoke;
@@ -186,8 +237,10 @@ form h3{
     font-size: 16px;
 }
 .mediaOptionContainer{
+    margin: 15px 0px;
     display: flex;
-    justify-content: space-evenly;
+    
+    justify-content: flex-start;
     gap: 15px;
     flex:1;
 }
@@ -198,12 +251,13 @@ form h3{
  
 }
 .mediaIcon{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border: 5px solid whitesmoke;
     flex-shrink: 1;
    
 }
+
 /**********ABOUT PAGE********/
 .quote{
     font-style:italic;
