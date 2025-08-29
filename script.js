@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     imageWrappers.forEach(function(wrapper){
         const overlay = wrapper.querySelector(".overlay");
         wrapper.addEventListener("mouseover", function(){
-            overlay.style.opacity = "0.7"
+            overlay.style.opacity = "1"
         })
         wrapper.addEventListener("mouseout", function(){
         overlay.style.opacity = "0"

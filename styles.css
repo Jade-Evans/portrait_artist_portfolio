@@ -147,6 +147,28 @@ footer{
     height: 240px;
     width: 240px;
     object-fit: cover;
+    display:block;/*stops white spaces under image*/
+}
+.image-wrapper{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+}
+.overlay-text{
+    font-size: 1.5rem;
+    z-index:3;
 }
 
 /**********COMMISSIONS PAGE STYLING*************************************************************/
