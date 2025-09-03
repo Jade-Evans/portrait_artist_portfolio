@@ -62,16 +62,25 @@
                         <legend><strong>Select media type:</strong></legend>
                         <div class="mediaOptionContainer">
                             <div class="mediaOption">
-                                <label><input type="radio" name="medium" value="digital">Digital Portrait </label>
-                                <img class="mediaIcon"src="images/grace.jpg" alt="portrait of toddler with leopard print top looking up" loading="lazy">  
+                                <label class="mediaLabelText"><input type="radio" name="medium" value="digital" >Digital Portrait </label>
+                                <div class="image-wrapper">
+                                    <img class="mediaIcon" src="images/grace.jpg" alt="portrait of toddler with leopard print top looking up" loading="lazy">  
+                                    <div class="overlay"></div>
+                                </div>
                             </div>
                             <div class="mediaOption">
-                                <label><input type="radio" name="medium" value="pencil">Pencil Portrait</label>
-                                <img class="mediaIcon"src="images/Belles,Colour pencil.jpg" alt="Dog Portrait, Colour Pencil" loading="lazy">
+                                <label class="mediaLabelText"><input type="radio" name="medium" value="pencil">Pencil Portrait</label>
+                                <div class="image-wrapper">
+                                    <img class="mediaIcon" src="images/Belles,Colour pencil.jpg" alt="Dog Portrait, Colour Pencil" loading="lazy">
+                                <div class="overlay"></div>
+                                </div>
                             </div>
                             <div class="mediaOption">
-                                <label><input type="radio" name="medium" value="painting">Painted Portrait</label>
-                                <img class="mediaIcon"src="images/Springer spaniel Acrylic.jpg" alt="Springer Spaniel Acrylic Portrait" loading="lazy">
+                                <label class="mediaLabelText"><input type="radio" name="medium" value="painting">Painted Portrait</label>
+                                <div class="image-wrapper">
+                                    <img class="mediaIcon" src="images/Springer spaniel Acrylic.jpg" alt="Springer Spaniel Acrylic Portrait" loading="lazy">
+                                    <div class="overlay"></div>
+                                </div>
                             </div>
                         </div>
                         
@@ -160,7 +169,7 @@
 
                         </tbody>
                     </table>
-                    <button class="formButton">Generate Quotation</button>
+                    <button id="quoteButton" class="formButton">Generate Quotation</button>
                 </div>
             </div>
             <div class="submitForm">
@@ -200,6 +209,6 @@
     <p><a href="https://www.instagram.com/yourprofile" target="_blank">Follow me on Instagram</a></p>
 </footer>
 
-<script src="script.js"></script> <!-- Link to your JS if needed -->
+<script src="script.js"></script> 
 </body>
 </html>

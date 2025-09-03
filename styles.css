@@ -39,6 +39,7 @@
 }
 nav{
     background-color: slategray;
+    padding: 30px;
 }
 .nav-bar{
     list-style:none;
@@ -159,11 +160,12 @@ footer{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.3 ease;
-    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+    background-color: rgba(244, 239, 239, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     z-index:2;
 }
 .overlay-text{
@@ -214,7 +216,7 @@ form h2{
     flex:1;
 }
 form h3{
-    margin: 0px;
+    margin: 10px 0px;
     flex:1;
 }
 .step1and2Form{
@@ -252,11 +254,14 @@ form h3{
 .formButton{
     flex: 0 0 auto;
     background-color: whitesmoke;
-    align-self: flex-start;
     border-radius: 5px;
     border: white;
     padding: 5px;
     font-size: 16px;
+}
+#quoteButton{
+    width:fit-content;
+    align-self: center;
 }
 .mediaOptionContainer{
     margin: 15px 0px;
@@ -272,12 +277,24 @@ form h3{
     gap: 10px;
  
 }
+.mediaOption:hover .mediaIcon{
+    height:160px;
+    width:160px;
+}
+.mediaOption:hover .mediaLabelText{
+    font-weight: bolder;
+
+}
+
 .mediaIcon{
     height: 150px;
     width: 150px;
     border: 5px solid whitesmoke;
     flex-shrink: 1;
    
+}
+.mediaLabelText input{
+    padding-left: 10px;
 }
 
 /**********ABOUT PAGE********/
