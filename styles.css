@@ -223,6 +223,8 @@ form h2{
     flex:1;
 }
 form h3{
+    font-size: 24px;
+    font-weight: 200;
     margin: 10px 0px;
     flex:1;
 }
@@ -232,7 +234,11 @@ form h3{
 }
 .step1Form, .step2Form{
     flex: 1;
+    flex-wrap: wrap;
     padding: 20px;
+    background-color:rgb(183, 191, 188);
+    margin: 15px;
+    border: 5px solid whitesmoke;
 }
 .step2Form{
    display: flex;
@@ -269,6 +275,25 @@ form h3{
 #quoteButton{
     width:fit-content;
     align-self: center;
+}
+.submitForm{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(183, 191, 188);
+    padding: 10px;
+    gap:10px;
+    border: 5px solid whitesmoke;
+}
+.formNames, .formContactDetails{
+    margin: 5px 10px;
+}
+.formPhotoUpload{
+    margin:15px;
+}
+.submitForm textarea{
+    align-self:center;
+    width: 80%;
 }
 .mediaOptionContainer{
     margin: 15px 0px;
