@@ -221,16 +221,29 @@
             </div>
             <div class="submitForm">
                 <h3>STEP THREE: SUBMIT FORM</h3>
-
-                <label for="fname">First name:<input type="text" id="fname" name="fname"></label>
-                <label for="lname">Last name:<input type="text" id="lname" name="lname"></label><br>
-                <label for="email">Email address:<input type="text" id="email" name="email"></label><br>
-                <label for="phone">Phone:<input type="text" id="phone" name="phone"></label><br>
+                <div class="formNames">
+                    <label for="fname">First name:<input type="text" id="fname" name="fname"></label>
+                    <label for="lname">Last name:<input type="text" id="lname" name="lname"></label>
+                </div>
+                <div class="formContactDetails">
+                    <label for="email">Email:<input type="text" id="email" name="email"></label>
+                    <label for="phone">Phone:<input type="text" id="phone" name="phone"></label>
+                </div>
+                <div class="formPhotoUpload">
+                    <label for="photoImage"><strong>Upload image photos:</strong></label>
+                    <p>Please make sure photos are clear, please only upload a maximum of 3. Please specify your
+                        in your note the primary photo</p>
+                    <input type="file" id="photoImage" name="photoImage" accept="image/png, image/jpeg" />
+                </div>
+                <label for="quotePDF"><strong>Upload PDF Quotation:</strong></label>
+                <input type="file" id="quotePDF" name="quotePDF" accept="image/png, image/jpeg" />
+                
         
 
-                <textarea name="message" rows="10" cols="30"></textarea>
+                <textarea name="message" rows="10" cols="40"></textarea>
                     <br><br>
                 <input type="submit" class="formButton">
+            </div>
         </div>
         
 
